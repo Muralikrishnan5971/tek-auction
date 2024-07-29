@@ -3,6 +3,9 @@ import "./Rootshell.css";
 export default function Rootshell() {
   return (
     <header className="App-header">
+      /* This can be further divided into smaller
+       * componenets
+       */
       <div className="navbar-1">
         <div className="navbar-left">
           <div className="brand">TEKION</div>
