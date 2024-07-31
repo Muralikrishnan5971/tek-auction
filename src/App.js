@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Rootshell />
+      {/* dj */}
       <div className="navbar-2"></div>
       <main className="content">
         <div className="logos">
