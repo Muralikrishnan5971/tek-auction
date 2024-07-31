@@ -1,19 +1,16 @@
 import chryslerLogo from "./assets/crysler.png";
-import Rootshell from "./components/Rootshell.jsx";
+import Appskeleton from "./components/Appskeleton/Appskeleton.jsx";
 import React from "react";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Rootshell />
-      {/* dj */}
-      <div className="navbar-2"></div>
-      <main className="content">
-        <div className="logos">
-          <img src={chryslerLogo} alt="Chrysler" className="logo" />
+    <div className="full-width full-height absolute root_globalMenu_base">
+      <Appskeleton />
+      <main className="main-content">
+        <div className="home-logo">
+          <img src={chryslerLogo} alt="Chrysler" className="centre-logo" />
         </div>
-        <div className="city">OF CHICAGO</div>
       </main>
     </div>
   );

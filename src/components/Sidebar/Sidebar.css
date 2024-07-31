@@ -1,0 +1,493 @@
+/* src/Sidebar.css */
+
+  .root_sideContainer {
+    font-family: Proxima-Nova-Regular, sans-serif;
+    font-feature-settings: "tnum";
+    text-size-adjust: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 8.32px;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: tabular-nums;
+    font-variant-position: normal;
+    text-rendering: optimizelegibility;
+    -webkit-tap-highlight-color: rgba(22, 22, 22, 0);
+  }
+
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+  /* Side Bar */
+
+  [data-rbd-droppable-context-id="0"] {
+    overflow-anchor: none;
+}
+
+  .root_sideNav_tekSideNavigation {
+    align-items:stretch;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(63, 71, 87);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background: #3f4757;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow:column;
+    height: 59.94rem;
+    justify-content: space-between;
+    line-height: 12.48px;
+    position: relative;
+    tab-size: 4;
+    user-select:none;
+    width:4rem;
+    z-index:var(--tek-z-index-max, 999);
+};
+
+/* Side Bar Kento Menu */
+
+  .root_sideNav_logoPanel {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 33.2734px;
+    justify-content: flex-start;
+    line-height: 12.48px;
+    margin-left: 5.824px;
+    width: 26.9375px;
+  }
+
+  .root_iconAsBtn_container {
+    outline:none
+}
+
+  #fullViewToggle {
+    display: block;
+    height: 10.3984px;
+    line-height: 14.4px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    width: 40.7969px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .root_sideNav_menuBtn {
+    align-items: center;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(63, 71, 87);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: tekionicon_vr;
+    font-weight: 400;
+    height: 12px;
+    justify-content: center;
+    line-height: 12px;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 24px;
+  }
+
+  .sideNav_Expand {
+    width:270px;
+}
+
+  /* Side Bar Favorite List Container */
+
+  .root_sideNav_favoriteApps {
+    flex: 1 0;
+    position: relative;
+    overflow: auto;
+    height: calc(100% - 22.8rem);
+}
+
+  .root_sideNav_favoriteAppsCompact::-webkit-scrollbar {
+    display: none;
+}
+
+  .root_favoriteApps_favoriteAppsContainer {
+    display: block;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 16px;
+    height: 140px;
+    line-height: 24px;
+    overflow-anchor: none;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  /* Side Bar Profile Container */
+
+  .root_sideNav_profileContainer {
+    border-style: solid;
+    font-size: 16px;
+    border-color: #152532;
+    border-width: .1rem 0;
+    padding: 18px 12px;
+    line-height: 24px;
+    display: block;
+    height: 265px;
+}
+
+  .root_profile_clockTile {
+    border-color: rgb(255, 255, 255);
+    border-radius: .1rem;
+    background-color: #5c6470;
+    border-style: none;
+    border-width: 0px;
+    border: none;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    box-shadow: rgb(0, 191, 165) 0px 2px 0px 0px;
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline: none;
+    outline-width: 0px;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    white-space-collapse: collapse;
+    width: 40px;
+}
+
+  .root_userSentiment_userSentiment {
+    cursor: pointer;
+    background-color: #5c6470;
+    box-shadow: 0 .2rem 0 0 #00bfa5;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    line-height: 24px;
+    margin-bottom: 15px;
+    width: 40px;
+}
+
+  .icon-very-satisfied-sentiment {
+    color: rgb(0, 191, 165);
+    cursor: pointer;
+    display: block;
+    font-family: tekionicon_vr;
+    font-size: 28px;
+    font-weight: 400;
+    height: 28px;
+    line-height: 28px;
+    text-transform: none;
+    width: 28px;
+  }
+
+  .root_profile_clockWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    height: 40px;
+    justify-content: flex-start;
+    line-height: 24px;
+    margin-bottom: 36px;
+    width: 39px;
+}
+
+  #employeeClock {
+    align-items: flex-start;
+    appearance: button;
+    background-color: rgb(92, 100, 112);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 1px;
+    border-style: none;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-width: 0px;
+    box-shadow: rgb(0, 191, 165) 0px 2px 0px 0px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin: 0px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: visible;
+    box-sizing: border-box;
+    overflow-y: visible;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding: 0;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    width: 40px;
+    word-spacing: 0px;
+ }
+
+  .root_profile_clockedIn .root_profile_clockedOut .root_profile_clockedIcon {
+    background-color: rgb(0, 191, 165);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    font-family: tekionicon_vr;
+    font-size: 28px;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 28px;
+    letter-spacing: normal;
+    line-height: 28px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: none;
+    text-wrap: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space-collapse: collapse;
+    width: 28px;
+    word-spacing: 0px;
+}
+
+  .icon-clock-out {
+    background-color: red;
+    border-radius: 50%;
+    width: 35.2px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .root_profile_clockLabel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    height: 19px;
+    justify-content: center;
+    line-height: 24px;
+    width: 206px;
+    word-break: break-word;
+}
+
+  .root_profile_profileInfo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+    outline: none;
+}
+
+  .root_profile_profileHeadingInfo {
+    margin-left: 2.4rem;
+    outline: none;
+    color: #fff;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 550;
+    height: 19px;
+    letter-spacing: 0.3px;
+    line-height: 19px;
+    margin-left: 24px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    width: 182px;
+}
+
+  .root_profile_durationContainer {
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-stretch: 100%;
+    font-weight: 550;
+    height: 17px;
+    left: 0px;
+    letter-spacing: 0.3px;
+    line-height: 17px;
+    margin-top: 12px;
+    padding: 0px 2px;
+    position: absolute;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    width: 63px;
+    word-spacing: 0px;
+}
+
+   .root_profile_profileWrapper {
+    align-items: stretch;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    height: 38px;
+    justify-content: flex-start;
+    line-height: 24px;
+    width: 246px;
+    word-break: break-word;
+   }
+
+   .root_avatar_avatar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+  .root_profile_profileAvatar {
+    border-radius: 50%;
+    width: 38px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+}
+
+  .ant-avatar-string {
+    position: absolute;
+    left: 31px;
+    display: block;
+    font-weight: 500;
+    transform-origin: 0 center;
+}
+
+  .root_avatar_defaultBackground {
+    color: #535860;
+}
+
+  #antd-pro-ellipsis {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+   }
+
+  .root_profile_roleLabel {
+    color: #d4d5d6;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: rgb(212, 213, 214);
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 17px;
+    letter-spacing: 0.3px;
+    line-height: 17px;
+    width: 184px;
+    word-break: break-word;
+}
+
+  /* Side Bar Navigation Bottom */
+
+  .root_sideNav_bottom {
+    height: 14px;
+    justify-content: space-between;
+    line-height: 24px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    width: 63px;
+  }
+
+  .root_sideNav_digitalClock {
+    display: block;
+    font-size: 12px;
+    height: 14px;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+    margin-left: 6px;
+    width: 54.5391px;
+  }
+
+  .root_profile_clockTile {
+    border-radius: .1rem;
+    background-color: #5c6470;
+    box-shadow: 0 .2rem 0 0 #00bfa5;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+}
+
+
+  
+  

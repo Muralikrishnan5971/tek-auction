@@ -6,77 +6,129 @@ body, html, #root, .App {
   width: 100%;
 }
 
+/* Main content styles */
+.main-content {
+  height: calc(100% - 64px);
+  width: calc(100% - 64px);
+}
 
-.navbar-2 {
-  background-color: #333;
-
-  width: 60px;
-  display: block;
-  justify-content: space-between;
+.home-logo {
+  display:flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 400px;
+}
+
+.centre-logo {
+  max-width: 500px;
+}
+
+/* New Side Bar CSS */
+
+.root_globalMenu_base {
+  left: 0;
+  background: #fff;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+::before, ::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/* Common CSS Class */
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+img {
+  border-style: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+  touch-action: manipulation;
+}
+
+.full-width {
   width: 100%;
 }
 
-
-.brand {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-right: 20px;
+.full-height {
+  width: 100%;
 }
 
-.sales-dropdown {
-  padding: 5px;
-  font-size: 1em;
+.absolute {
+  position: absolute !important;
 }
 
-.get-help, .notifications, .messages {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin: 0 10px;
-  cursor: pointer;
-  border-radius: 5px;
+.root_icon_size_xxl {
+  font-size: 2.8rem;
 }
 
-.profile {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
+.root_icon_size_xl {
+  font-size: 2.2rem;
 }
 
-.profile-initials {
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 50%;
-  padding: 10px;
-  margin-right: 10px;
+.root_icon_size_l {
+  font-size: 1.8rem;
 }
 
-.profile-name {
-  color: white;
+.root_icon_size_md {
+  font-size: 1.2rem;
 }
 
-/* Main content styles */
-.content {
-  padding-top: 80px; /* Add padding to avoid overlap with the fixed header */
-  text-align: center;
+.root_icon_size_s {
+  font-size: 0.8rem;
 }
 
-.logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px; /* Adjust the margin as needed */
+.root_avatar_defaultBackground {
+  background-color: #dde4eb;
 }
 
-.logo {
-  max-width: 100px;
-  margin: 0 20px;
+.root_ellipsis_lineClamp {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
-.city {
-  font-size: 3em;
-  margin-top: 20px;
-  color: #FF0000;
+.root_ellipsis_ellipsis {
+  overflow: hidden;
+  display: inline-block;
+  word-break: break-all;
+  width: 100%;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'tekionicon_vr' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
