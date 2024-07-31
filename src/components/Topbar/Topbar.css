@@ -1,0 +1,46 @@
+  .root_header-flex {
+    position: absolute;
+    left: 64px;
+    height: 64px;
+    display: flex;
+    width: calc(100vw - 64px);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: rgb(63, 71, 87);
+    .root_icon-logo{
+        height: 16px;
+        width: 130px;
+    }
+    .root_header-avatar-flex {
+        display: flex;
+        width: 300px;
+        border-left-style: solid;
+        border-left-color: #152532;
+        height: 64px;
+        align-items: center;
+        justify-content: left;
+    }
+}
+
+  .root_avatar-square {
+    height: 40px;
+    margin-left: 15px;
+    display: flex;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    background-color: rgb(14, 241, 59);
+    width: 40px;
+}
+
+  .root_dealer-name {
+    padding-left: 12px;
+    width: 180px;
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+}
