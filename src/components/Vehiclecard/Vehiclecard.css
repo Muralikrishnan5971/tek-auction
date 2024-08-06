@@ -1,0 +1,129 @@
+.vehicle-card {
+  font-family: Proxima-Nova-Regular;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  display: absolute;
+  padding: 0;
+  margin: 0;
+  width: 330px;
+  height: 186px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  background-color: #fff;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+  border: 1px solid rgba(212, 213, 214, 1);
+  background: rgba(255, 255, 255, 1);
+  }
+
+  .vehicle-details {
+    margin-top: 5px;
+  }
+
+  .ymm {
+    margin-left: 5px;
+  }
+  
+  .vehicle-image {
+    width: 110px;
+    height: 80px;
+    height: auto;
+    margin-left: 3px;
+    display: absolute;
+    border-radius: 4px;
+  }
+  
+  .vehicle-header h3, .vehicle-header h4 {
+    display: block;
+    justify-content: space-evenly;
+  }
+
+  .vehicle-header {
+    display:flex;
+  }
+  
+  .vehicle-header h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  
+  .vehicle-header h4 {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .vehicle-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #888;
+  }
+  .vehicle-type {
+    margin-left: 16px;
+    margin-bottom: 5px;
+  }
+
+  .vehicle-img, .used-img {
+    margin-right: 3px;
+  }
+
+  .vehicle-condition {
+    margin-right: 100px;
+    margin-bottom: 5px;
+  }
+  
+  .vehicle-info .vehicle-type,
+  .vehicle-info .vehicle-condition {
+    display: absolute;
+    align-items: right;
+    justify-content:center;
+  }
+  
+  .vehicle-price {
+    margin-top: 15px;
+    margin-left: 16px;
+    font-weight: bold;
+    color: #000;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.002em;
+  }
+  
+  .vehicle-misc {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-right: 16px;
+    color: rgba(68, 79, 92, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.002em;
+  }
+
+  .miles-price {
+    position: relative;
+    display: flex;
+    height: 48px;
+    border-radius: 0px 0px 8px 8px;
+    background: rgb(228, 228, 238);
+    justify-content: space-between;
+  }
+  
+  .vehicle-checkbox {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    /* align-items: center; */
+  }
+  
+
+  

@@ -1,5 +1,6 @@
-import tekionlogo from "../../assets/tekion-logo.gif";
-import "./Topbar.css";
+import React from 'react';
+import tekionlogo from '../../assets/tekion-logo.gif';
+import './Topbar.css';
 
 function Topbar() {
   return (
