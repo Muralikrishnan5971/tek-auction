@@ -1,5 +1,7 @@
 import chryslerLogo from "./assets/crysler.png";
+// import vehicle from './assets/vehicle-image.png'
 import Appskeleton from "./components/Appskeleton/Appskeleton.jsx";
+// import VehicleCard from "./components/Vehiclecard/Vehiclecard.jsx";
 import React from "react";
 import "./App.css";
 
@@ -9,6 +11,20 @@ function App() {
       <Appskeleton />
       <main className="main-content">
         <div className="home-logo">
+          <div className="app">
+      {/* <VehicleCard 
+        image={vehicle} 
+        make="BMW" 
+        model="Z3 Convertible" 
+        year="2021" 
+        type="Sedan" 
+        condition="Used" 
+        id="123456" 
+        price="20,890" 
+        mileage="29K" 
+        transmission="Auto" 
+      /> */}
+    </div>
           <img src={chryslerLogo} alt="Chrysler" className="centre-logo" />
         </div>
       </main>
