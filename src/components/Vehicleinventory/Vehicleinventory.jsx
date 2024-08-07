@@ -1,10 +1,5 @@
 import React from 'react';
 import './Vehicleinventory.css';
-// import { useNavigate } from 'react-router';
-
-// function redirectInventory() {
-//     return useNavigate("/inventory");
-// }
 
 const inventoryHeader = ({ totalVehicles }) => { 
   return (
