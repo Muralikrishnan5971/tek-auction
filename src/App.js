@@ -4,14 +4,16 @@ import Appskeleton from "./components/Appskeleton/Appskeleton.jsx";
 // import VehicleCard from "./components/Vehiclecard/Vehiclecard.jsx";
 import React from "react";
 import "./App.css";
+import Login from "./pages/Login.jsx";
 
 function App() {
   return (
     <div className="full-width full-height absolute root_globalMenu_base">
-      <Appskeleton />
-      <main className="main-content">
+      {/* <Appskeleton /> */}
+      <Login />
+      {/* <main className="main-content">
         <div className="home-logo">
-          <div className="app">
+          <div className="app"> */}
       {/* <VehicleCard 
         image={vehicle} 
         make="BMW" 
@@ -24,10 +26,10 @@ function App() {
         mileage="29K" 
         transmission="Auto" 
       /> */}
-    </div>
+    {/* </div>
           <img src={chryslerLogo} alt="Chrysler" className="centre-logo" />
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }
