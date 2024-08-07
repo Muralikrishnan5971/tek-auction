@@ -1,5 +1,5 @@
   .root_header-flex {
-    position: absolute;
+    position: fixed;
     left: 64px;
     height: 64px;
     display: flex;
