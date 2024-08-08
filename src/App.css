@@ -13,17 +13,6 @@ body, html, #root, .App {
   width: calc(100% - 64px);
 }
 
-.home-logo {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
-}
-
-.centre-logo {
-  max-width: 500px;
-}
-
 /* New Side Bar CSS */
 
 .root_globalMenu_base {

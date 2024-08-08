@@ -3,7 +3,7 @@ import vehicle from '../../assets/vehicle-profile.png';
 import box from '../../assets/used-box.svg';
 import './Vehiclecard.css';
 
-const VehicleCard = ({ image, make, model, year, type, condition, id, price, mileage, transmission }) => {
+const VehicleCard = ({ image, make, model, year, type, condition, id, price, mileage, transmission,isSelected, onSelect }) => {
   return (
     <div className="vehicle-card">
       <div className="vehicle-details">
@@ -20,7 +20,9 @@ const VehicleCard = ({ image, make, model, year, type, condition, id, price, mil
         </div>
       </div>
       <div className="vehicle-checkbox">
-        <input type="checkbox" />
+        <input type="checkbox" id={`vehicle-${id}`}
+          checked={isSelected}
+          onChange={onSelect} />
       </div>
       <div className='miles-price'>
             <div className="vehicle-price">
