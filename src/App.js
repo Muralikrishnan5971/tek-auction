@@ -9,6 +9,7 @@ import VehicleGrid from "./components/Vehiclegrid/Vehiclegrid.jsx";
 import React from "react";
 import "./App.css";
 import Login from "./pages/Login.jsx";
+import Buyerseller from './pages/Buyerseller.jsx';
 
 
 const vehicles = [
