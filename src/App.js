@@ -5,12 +5,16 @@ import Appskeleton from "./components/Appskeleton/Appskeleton.jsx";
 import React from "react";
 import "./App.css";
 import Login from "./pages/Login.jsx";
+import Buyerseller from './pages/Buyerseller.jsx';
 
 function App() {
   return (
     <div className="full-width full-height absolute root_globalMenu_base">
-      {/* <Appskeleton /> */}
-      <Login />
+      <Appskeleton />
+      {/* <Login /> */}
+      <div className="main-content">
+        <Buyerseller/>
+      </div>
       {/* <main className="main-content">
         <div className="home-logo">
           <div className="app"> */}
