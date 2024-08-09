@@ -140,7 +140,7 @@ fetchVehicles();
 
   useEffect(() => {
     if (triggerEffect) {
-      axios.post('http://10.140.16.69:8123/auction', payload)
+      axios.post('http://10.140.10.195:8123/auction', payload)
       .then(response => {console.log(response.data);})
       .catch(error => {console.error('Error fetching data: ', error);});
       setTriggerEffect(false);
@@ -164,7 +164,7 @@ fetchVehicles();
       setIsAllDoneModalOpen(false);
     }, 3000);
     setTimeout(() => {
-      navigate('/auction-list', { state: { selectedVehicles } });
+      navigate('/seller/auction-list', { state: { selectedVehicles } });
     }, 3000);
   };
 
@@ -181,7 +181,7 @@ fetchVehicles();
             key={vehicle.id}
             price={vehicle.pricingDetails?.retailPrice ?? 20000}
             condition={'Used'}
-            type={'Sedan'}
+            type={vehicle.trimDetails?.bodyType?.trim() || "Sedan"}
             stockId={(vehicle.stockID && vehicle.stockID.length <= 8) ? vehicle.stockID : `#DH${Math.floor(Math.random() * 568)}B`}
             image={images[Math.floor(Math.random() * images.length)]}
             {...vehicle}
