@@ -33,7 +33,7 @@ const AuctionListPage = () => {
         <tbody>
           {selectedVehicles.map((vehicle) => (
             <tr key={vehicle.id}>
-              <td>{vehicle.stockNumber}</td>
+              <td>{vehicle.stockID}</td>
               <td>{vehicle.vin}</td>
               <td>
                 <span className="status-indicator" /> {vehicle.status}
@@ -41,10 +41,10 @@ const AuctionListPage = () => {
               <td>
                 <img src={vehicle.image} alt={vehicle.model} className="vehicle-image" /> {vehicle.year} {vehicle.make} {vehicle.model}
               </td>
-              <td>{vehicle.modelNumber}</td>
-              <td>{vehicle.modelType}</td>
-              <td>{vehicle.bodyClass}</td>
-              <td>{vehicle.retailPrice}</td>
+              <td>{vehicle.mfrModelCode ?? `M${Math.floor(Math.random() * 1000)}`}</td>
+              <td>{vehicle.trimDetails?.bodyType?.trim() || "Sedan"}</td>
+              <td>{vehicle.trimDetails?.bodyClass?.trim() || "Car"}</td>
+              <td>{vehicle.pricingDetails?.retailPrice ?? 20000}</td>
             </tr>
           ))}
         </tbody>

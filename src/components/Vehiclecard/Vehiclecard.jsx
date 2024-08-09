@@ -3,7 +3,7 @@ import vehicle from '../../assets/vehicle-profile.png';
 import box from '../../assets/used-box.svg';
 import './Vehiclecard.css';
 
-const VehicleCard = ({ image, make, model, year, type, condition, id, price, mileage, transmission,isSelected, onSelect }) => {
+const VehicleCard = ({ image, make, model, year, type, condition, id, stockId, price, mileage, transmission,isSelected, onSelect }) => {
   return (
     <div className="vehicle-card">
       <div className="vehicle-details">
@@ -16,7 +16,7 @@ const VehicleCard = ({ image, make, model, year, type, condition, id, price, mil
         </div>
         <div className="vehicle-info">
           <span className="vehicle-type"><img className='vehicle-img' src={vehicle} alt='Vehicle'/> {type}</span>
-          <span className="vehicle-condition"><img className='used-img' src={box} alt='Unused box'/> {condition} • #{id}</span>
+          <span className="vehicle-condition"><img className='used-img' src={box} alt='Unused box'/> {condition} • #{stockId}</span>
         </div>
       </div>
       <div className="vehicle-checkbox">
