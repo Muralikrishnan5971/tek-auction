@@ -9,7 +9,7 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, selectedVehicles }) => 
   const [duration, setDuration] = useState('');
 
   const handleConfirm = () => {
-    onConfirm({ startDate, startTime, duration });
+    onConfirm({ startDate, startTime, duration});
     onClose();
   };
 
@@ -46,9 +46,9 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, selectedVehicles }) => 
                   <div className="date-picker">
                     <select className='duration-drop' value={duration} onChange={(e) => setDuration(e.target.value)}>
                       <option value="">Select Duration</option>
-                      <option value="1h">1 hour</option>
-                      <option value="2h">2 hours</option>
-                      <option value="3h">3 hours</option>
+                      <option value="1">1 hour</option>
+                      <option value="2">2 hours</option>
+                      <option value="3">3 hours</option>
                     </select>
                   </div>
                 </div>
