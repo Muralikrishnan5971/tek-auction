@@ -11,7 +11,7 @@ const Modal = ({ showModal, handleClose, currentBid }) => {
       const timer = setTimeout(() => {
         // Redirect to another screen after 20 seconds, passing the latest bid amount as state
         navigate('/buyer/auction/confirmation', { state: { bidAmount: currentBid } });
-      }, 20000); // 20 seconds
+      }, 5000); // 20 seconds
 
       return () => clearTimeout(timer); // Cleanup the timer if the component unmounts or showModal changes
     }
@@ -26,7 +26,7 @@ const Modal = ({ showModal, handleClose, currentBid }) => {
       <div className="modal-card">
         <div className="card-header">
           <h2>We have a Deal!!</h2>
-          <button className="icon-close" onClick={handleClose}></button>
+          {/* <button className="icon-closed" onClick={handleClose}></button> */}
         </div>
         <div className="card-content">
           <img
