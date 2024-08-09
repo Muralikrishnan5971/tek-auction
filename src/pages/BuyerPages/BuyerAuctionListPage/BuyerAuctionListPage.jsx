@@ -44,10 +44,6 @@ function BuyerAuctionListPage() {
                     <h3>2020 Make Vehicle Auction 2024</h3>
                     <p>Starts at 15th August 2024</p>
                 </div>
-                <div className="upcoming-auction-card">
-                    <h3>2022 Make Vehicle Auction 2024</h3>
-                    <p>Starts at 15th August 2024</p>
-                </div>
             </div>
         </div>
         </>

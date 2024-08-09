@@ -27,7 +27,7 @@ const AuctionListPage = () => {
             <th>Model No.</th>
             <th>Model Type</th>
             <th>Body Class</th>
-            <th>Retail Price</th>
+            <th>Base Price</th>
           </tr>
         </thead>
         <tbody>

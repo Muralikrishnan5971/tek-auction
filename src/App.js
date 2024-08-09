@@ -8,6 +8,8 @@ import BuyerAuctionPage from './pages/BuyerPages/BuyerAuctionPage/BuyerAuctionPa
 import AppSkeleton from "./components/Appskeleton/Appskeleton.jsx";
 import Buyerseller from './pages/HomePage/Homepage.jsx';
 import Login from './pages/LoginPage/Login.jsx';
+import AuctionVehiclehistory from "./pages/BuyerPages/AuctionVehiclehistory/AuctionVehiclehistory.jsx";
+import FinalAuctionhistory from "./pages/BuyerPages/FinalAuctionHistory/FinalAuctionhistory.jsx";
 
 
 function App() {
@@ -48,10 +50,26 @@ function App() {
                 <BuyerAuctionPage />
                 </>
                 } />
-            </Routes>
+
+                <Route path="/buyer/auction/history" element={
+                   <>
+                   <AppSkeleton />
+                   <AuctionVehiclehistory />
+                   </>
+                } />
+
+                <Route path="/buyer/auction/confirmation" element={
+                   <>
+                   <AppSkeleton />
+                   <FinalAuctionhistory />
+                   </>
+                } />
+            </Routes>         
           </Router>
+          
       </div>
   );
 }
+
 
 export default App;
