@@ -3,11 +3,11 @@ import './Inventoryheader.css'
 
 const Inventoryheader = ({ totalVehicles , onStartProcess, isDisabled}) => { 
     return (
-      <div className="header">
+      <div className="inventory-header">
           <div className='goBackBtn icon-left-arrow-thin'></div>
-          <div className="title">Vehicle Inventory</div>
-          <div className='line'> | </div>
-          <div className="count"> {totalVehicles} Vehicles Fetched</div>
+          <div className="inventory-title">Vehicle Inventory</div>
+          <div className='i-line'> | </div>
+          <div className="vehicle-count"> {totalVehicles} Vehicles Fetched</div>
           <button className="process-button" 
                 onClick={onStartProcess} 
                 disabled={isDisabled}

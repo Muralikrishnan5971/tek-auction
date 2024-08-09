@@ -15,8 +15,8 @@ const VehicleCard = ({ image, make, model, year, type, condition, id, price, mil
         </div>
         </div>
         <div className="vehicle-info">
-          <span className="vehicle-type"><img className='vehicle-img' src={vehicle} alt='Vehicle Image'/> {type}</span>
-          <span className="vehicle-condition"><img className='used-img' src={box} alt='Unused box Image'/> {condition} • #{id}</span>
+          <span className="vehicle-type"><img className='vehicle-img' src={vehicle} alt='Vehicle'/> {type}</span>
+          <span className="vehicle-condition"><img className='used-img' src={box} alt='Unused box'/> {condition} • #{id}</span>
         </div>
       </div>
       <div className="vehicle-checkbox">

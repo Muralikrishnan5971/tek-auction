@@ -9,13 +9,14 @@ const AuctionListPage = () => {
   return (
     <div className="auction-list-container">
       <header>
-        <h1>Auction List</h1>
-        <span>{selectedVehicles.length} Vehicle(s) Selected</span>
+        <h4>Auction Vehicle List</h4>
+        <p className='line-seperator'> | </p>
+        <span className='selected-vehicle'>{selectedVehicles.length} Vehicle(s) Selected</span>
         <div className="auction-timer">
           Auction Starts in: 13 hr 20 min 56 Seconds
         </div>
       </header>
-      <p>Please change the Pricing before the auction start</p>
+      <p className='price-change-txt'>Please change the Pricing before the auction start</p>
       <table className="vehicle-table">
         <thead>
           <tr>

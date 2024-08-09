@@ -1,0 +1,53 @@
+.success-modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    transition: left 0.5s linear;
+    left: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    animation-name: fareOpen;
+    animation-duration: 0.5s
+}
+
+.success-modal-card {
+    align-items: center;
+    position: fixed;
+    border-radius: 4px;
+    background-color: white;
+    justify-content: center;
+    right:39%;
+    top: 35%;
+    width: 350px;
+    padding: 24px 0px 32px 0px;
+    gap: 24px;
+    opacity: 0px;
+}
+
+.all-done-logo {
+    width: 220px;
+    height: 220px;
+    margin-left: 65px;
+}
+
+.set-text {
+    width: 132px;
+    height: 16px;
+    margin-left: 120px;
+    justify-items: center;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.redirect-text {
+    width: 200px;
+    height: 16px;
+    margin-left: 110px;
+    justify-items: center;
+    gap: 0px;
+    opacity: 0px;
+}

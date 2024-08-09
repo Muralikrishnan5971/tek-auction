@@ -21,14 +21,13 @@
   }
 
   .ymm {
-    margin-left: 5px;
+    margin-left: 15px;
   }
   
-  .vehicle-image {
+  img.vehicle-image {
     width: 90px;
     height: 80px;
-    height: auto;
-    margin-left: 5px;
+    margin-left: 10px;
     display: absolute;
     border-radius: 4px;
   }
@@ -123,7 +122,6 @@
     top: 16px;
     right: 16px;
     display: flex;
-    /* align-items: center; */
   }
   
 

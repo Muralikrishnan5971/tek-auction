@@ -1,21 +1,48 @@
 .auction-list-container {
-    padding: 20px;
-    position: relative;
-  }
-  
-  header {
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 50px;
+  header{
+    border: black;
+    padding: 0 15px;
+    background-color: lightgrey;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
+    h4 {
+        font-weight: 650; 
+        font-size: 20px;
+    }
+  }
+  }
+
+  .price-change-txt {
+    margin-left: 20px;
+  }
+
+  span.selected-vehicle {
+    margin-left: 10px;
+  }
+
+  .line-seperator {
+    width: 1px;
+    height: 24px;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 0 3px 10px;
+    opacity: 0px;
+    color: black;
   }
   
   .auction-timer {
-    font-weight: bold;
+    font-weight: 600;
+    margin-left: auto;
   }
   
   .vehicle-table {
-    width: 100%;
+    width: calc(100vw - 310px);
+    margin: 0 20px 0 20px;
     border-collapse: collapse;
   }
   

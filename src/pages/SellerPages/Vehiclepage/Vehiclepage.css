@@ -3,3 +3,8 @@
     flex-wrap: wrap;
     justify-content: left;
 }
+
+.inventory-container{
+    position: relative;
+    margin-top: 55px;
+}

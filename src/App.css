@@ -7,11 +7,11 @@ body, html, #root, .App {
 }
 
 /* Main content styles */
-.app {
+/* .app {
   margin-top: 64px;
-  height: calc(100% - 64px);
-  width: calc(100% - 64px);
-}
+  margin-left: 64px;
+  display: flex;
+} */
 
 /* New Side Bar CSS */
 

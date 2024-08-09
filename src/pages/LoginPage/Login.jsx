@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import { useNavigate} from 'react-router-dom';
 import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const HandleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    navigate('/home');
   };
 
   return (
@@ -18,7 +19,7 @@ function Login() {
       <img src={"https://d36263b6wju30t.cloudfront.net/DMS/common/loginImage.jpg"} alt="Auction" className="centre-logo" />
       </div>
       <div className="login-container">
-        <form className="login-form" onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={HandleSubmit}>
           <div className='icon-Tekion_Logo stylelogo'></div>
           <div className="input-group">
             <label htmlFor="email">Username*</label>

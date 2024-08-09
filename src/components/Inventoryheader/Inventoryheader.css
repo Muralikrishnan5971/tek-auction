@@ -1,4 +1,4 @@
-.header {
+.inventory-header {
   display: flex;
   align-content: left;
   padding: 15px;
@@ -8,29 +8,31 @@
 }
 
 .goBackBtn {
+  margin-top: 15px;
   padding-top: 7px;
   position: relative;
   font-size: 15px;
 }
 
-.title {
+.inventory-title {
   margin-left: 10px;
+  margin-top: 15px;
   position: relative;
   font-size: 24px;
   font-weight: 600;
 }
 
-.line {
+.i-line {
   font-size: 16px;
   position: relative;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: 10px;
 }
 
-.count {
+.vehicle-count {
   font-size: 16px;
   position: relative;
-  margin-top: 6px;
+  margin-top: 20px;
   margin-left: 10px;
   font-weight: 500;
   color: #888;
@@ -43,6 +45,7 @@
   display: flex;
   position: static;
   margin-left: auto;
+  width: 180px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
