@@ -11,10 +11,10 @@ function HomePage() {
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     if(option === 'sell') {
-      navigate('/inventory');
+      navigate('/seller/inventory');
     }
     else if(option === 'buy') {
-      navigate('/login');
+      navigate('/buyer/auction-list');
     }
   };
 
@@ -34,24 +34,6 @@ function HomePage() {
                 </div>
             </div>
         </div>
-    // <div className="landing-page">
-    //   <div className="options-container">
-    //     <div
-    //       className={`option ${selectedOption === 'buy' ? 'selected' : ''}`}
-    //       onClick={() => handleOptionClick('buy')}
-    //     >
-    //       <img src={buyCarImage} alt="Buy Car" className="option-image" />
-    //       <h3 className='bottom-text_old'>Buyer</h3>
-    //     </div>
-    //     <div
-    //       className={`option ${selectedOption === 'sell' ? 'selected' : ''}`}
-    //       onClick={() => handleOptionClick('sell')}
-    //     >
-    //       <img src={sellCarImage} alt="Sell Car" className="option-image" />
-    //       <h3 className='bottom-text'>Seller</h3>
-    //     </div>
-    //   </div>
-    // </div>
     
   );
 }

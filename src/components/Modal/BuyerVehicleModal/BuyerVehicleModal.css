@@ -1,0 +1,185 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.vehicle-modal {
+    width: 60%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Hide Scrollbar in Firefox */
+.vehicle-modal {
+    scrollbar-width: none;
+}
+
+/* Hide Scrollbar in WebKit Browsers */
+.vehicle-modal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    transition: color 0.3s;
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+    color: #9ca3af;
+    transition: color 0.3s;
+}
+
+/* .close-button:hover .close-icon {
+    color: lawngreen;
+} */
+
+/* Header and Tabs */
+.vehicle-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.vehicle-info-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.vehicle-info-tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.vehicle-info-tabs ul li {
+    margin-right: 20px;
+}
+
+.vehicle-info-tabs ul li a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: #6b7280;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.vehicle-info-tabs ul li a:hover,
+.vehicle-info-tabs ul li a.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actions a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.actions .bid-now-button {
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    margin-top: 0;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions .bid-now-button:hover {
+    background-color: #1e40af;
+}
+
+/* Vehicle Info */
+.vehicle-info-content {
+    gap: 20px;
+}
+
+.vehicle-info-details {
+    flex: 1;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Warranties Table */
+.vehicle-info-warranties {
+    margin-top: 20px;
+}
+
+.vehicle-info-warranties table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vehicle-info-warranties th,
+.vehicle-info-warranties td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.vehicle-info-warranties th {
+    background-color: #f9fafb;
+    font-weight: 600;
+}
+
+.vehicle-info-warranties td {
+    background-color: #fff;
+}
+  

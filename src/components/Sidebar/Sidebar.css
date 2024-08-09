@@ -6,6 +6,10 @@
     text-size-adjust: 100%;
     color: rgb(255, 255, 255);
     font-size: 8.32px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
     font-variant-alternates: normal;
     font-variant-caps: normal;
     font-variant-east-asian: normal;

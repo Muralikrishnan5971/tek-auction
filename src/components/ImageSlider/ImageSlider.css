@@ -1,0 +1,59 @@
+.vehicle-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .main-image {
+    width: 85%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vehicle-info-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 65px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .thumbnail.active,
+  .thumbnail:hover {
+    opacity: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrow-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2563EB;
+    padding: 8px;
+  }
+  
+  .arrow-up {
+    margin-bottom: 8px;
+  }
+  
+  .arrow-down {
+    margin-top: 8px;
+  }
+  
