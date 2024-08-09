@@ -40,10 +40,10 @@ const FinalAuctionhistory = () => {
         </div>
         <div className="bottom">
           <div className="bidder-avatar">
-            <p>SS</p>
+            <p>SK</p>
           </div>
           <div className="bidder-info">
-            <div className="bidder-name">Sayantani Sarkar:</div>
+            <div className="bidder-name">Sasikumar:</div>
             <div className="bid-amount">Placed +$1000 more</div>
             <div className="bid-time">Mar 13, 2023 3:39 PM</div>
           </div>
