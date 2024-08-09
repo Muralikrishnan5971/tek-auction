@@ -14,11 +14,13 @@ import axios from 'axios'
 
 const VehiclePage = () => {
   const [vehicles, setVehicles] = useState([]);
+  const [payload, setPayload] = useState(null);
+  const [triggerEffect, setTriggerEffect] = useState(false);
+  const images = [Vehicle, Vehicle1, Vehicle2, Vehicle3, Vehicle4];
   const [selectedVehicles, setSelectedVehicles] = useState([]);  
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
   const [isAllDoneModalOpen, setIsAllDoneModalOpen] = useState(false);
   const navigate = useNavigate();
-  const images = [Vehicle, Vehicle1, Vehicle2, Vehicle3, Vehicle4];
 
   useEffect(() => {
     const fetchVehicles = async () => {
@@ -136,8 +138,28 @@ fetchVehicles();
     setIsConfirmationModalOpen(true);
   };
 
+  useEffect(() => {
+    if (triggerEffect) {
+      axios.post('http://10.140.16.69:8123/auction', payload)
+      .then(response => {console.log(response.data);})
+      .catch(error => {console.error('Error fetching data: ', error);});
+      setTriggerEffect(false);
+}}, [triggerEffect, payload]);
+
   const handleConfirmation = (data) => {
     setIsAllDoneModalOpen(true);
+    const dateString = `${data.startDate}T${data.startTime}:00`;
+    const date = new Date(dateString);
+    const epochTime = date.getTime();
+    setPayload({
+      "name" : "2000 Make",
+      "vehicleInfos" : selectedVehicles,
+      "startTime" : epochTime,
+      "dealerId": "4",
+      "tenantId": "byteclub",
+      "endHour" : data.duration
+    })
+    setTriggerEffect(true);
     setTimeout(() => {
       setIsAllDoneModalOpen(false);
     }, 3000);
