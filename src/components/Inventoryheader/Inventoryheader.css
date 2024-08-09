@@ -1,5 +1,6 @@
 .inventory-header {
   display: flex;
+  width: calc(100vw - 64px);
   align-content: left;
   padding: 15px;
   border-bottom: 1px solid #dcdcdc;
