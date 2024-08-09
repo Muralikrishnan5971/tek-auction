@@ -1,26 +1,14 @@
-
-//   const vehicles=[
-
-//     { id: 1, make: 'BMW', model: '2021 Z3 Convertible', price: '$20,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Auto' },
-//     { id: 2, make: 'Toyota', model: '2021 Corolla', price: '$20,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Auto' },
-//     { id: 3, make: 'Toyota', model: '2021 Camry', price: '$30,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Auto' },
-//     { id: 4, make: 'Toyota', model: '2022 Mirai EV', price: '$40,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Auto' },
-//     { id: 5, make: 'Toyota', model: '2022 Venza', price: '$20,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Manual' },
-//     { id: 6, make: 'Renault', model: '2021 Megane', price: '$20,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Manual' },
-//     { id: 7, make: 'Renault', model: '2021 Kadjar', price: '$20,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Manual' },
-//     { id: 8, make: 'Renault', model: '2021 Scenic', price: '$40,890', image: 'https://via.placeholder.com/150', type: 'Sedan', status: 'Used', miles: '29K Miles', transmission: 'Auto' },
-//   ];
-import Vehicle from '../../assets/vehicle-image.png'
-import Vehicle1 from '../../assets/vehicle-image1.png'
-import Vehicle2 from '../../assets/vehicle-image2.png'
-import Vehicle3 from '../../assets/vehicle-image3.png'
-import Vehicle4 from '../../assets/vehicle-image4.png'
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import Vehicle from '../../../assets/vehicle-image.png'
+import Vehicle1 from '../../../assets/vehicle-image1.png'
+import Vehicle2 from '../../../assets/vehicle-image2.png'
+import Vehicle3 from '../../../assets/vehicle-image3.png'
+import Vehicle4 from '../../../assets/vehicle-image4.png'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-import VehicleCard from '../../components/Vehiclecard/Vehiclecard.jsx';
-import ConfirmationModal from '../../components/Confirmationmodal/Confirmationmodal.jsx';
-import Inventoryheader from '../../components/Inventoryheader/Inventoryheader.jsx';
+import VehicleCard from '../../../components/Vehiclecard/Vehiclecard.jsx';
+import ConfirmationModal from '../../../components/Modal/ConfirmModal/ConfirmModal.jsx';
+import AllDoneModal from '../../../components/Modal/AllDoneModal/AllDoneModal.jsx'
+import Inventoryheader from '../../../components/Inventoryheader/Inventoryheader.jsx';
 import './Vehiclepage.css';
 
 const VehiclePage = () => {
@@ -250,6 +238,7 @@ const VehiclePage = () => {
       ];
   const [selectedVehicles, setSelectedVehicles] = useState([]);  
   const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
+  const [isAllDoneModalOpen, setIsAllDoneModalOpen] = useState(false);
   const navigate = useNavigate();
 
 //   useEffect(() => {
@@ -285,12 +274,17 @@ const VehiclePage = () => {
   };
 
   const handleConfirmation = (data) => {
-    console.log('Confirmed with data:', data);
-    navigate('/auction-list', { state: { selectedVehicles } });
+    setIsAllDoneModalOpen(true);
+    setTimeout(() => {
+      setIsAllDoneModalOpen(false);
+    }, 3000);
+    setTimeout(() => {
+      navigate('/auction-list', { state: { selectedVehicles } });
+    }, 3000);
   };
 
   return (
-    <>
+    <div className='inventory-container'>
     <Inventoryheader totalVehicles={vehicles.length} 
         onStartProcess={handleStartProcess} 
         isDisabled={selectedVehicles.length === 0} 
@@ -309,14 +303,23 @@ const VehiclePage = () => {
     </div>
       <ConfirmationModal
         isOpen={isConfirmationModalOpen}
-        onClose={() => setIsConfirmationModalOpen(false)}
+        onClose={() => {
+          setIsConfirmationModalOpen(false);
+        }}
         onConfirm={handleConfirmation}
         selectedVehicles={selectedVehicles}
       />
-    </>
+      {!isConfirmationModalOpen && isAllDoneModalOpen ? ( <AllDoneModal 
+              isOpen={isAllDoneModalOpen}
+      /> ):("") }
+       
+    </div>
   );
 };
 
 export default VehiclePage;
+
+
+
 
 

@@ -44,7 +44,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     flex-flow:column;
-    height: 53.6rem;
+    height: 100vh;
     justify-content: space-between;
     line-height: 12.48px;
     position: relative;

@@ -31,9 +31,9 @@
     font-size: 17px;
     font-weight: bold;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: black;
     justify-content: center;
-    background-color: rgb(14, 241, 59);
+    background-color:aquamarine;
     width: 40px;
 }
 
