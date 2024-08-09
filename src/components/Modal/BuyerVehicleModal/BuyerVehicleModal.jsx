@@ -1,8 +1,16 @@
 import React from 'react';
 import './BuyerVehicleModal.css';
+import { useNavigate } from 'react-router-dom';
 import Slider from '../../ImageSlider/ImageSlider';
 
 const BuyerVehicleModal = ({ vehicle, onClose }) => {
+
+  const navigate = useNavigate();
+    
+    const handleBidClick = () => {
+        navigate('/buyer/auction/history');
+      };
+
   if (!vehicle) return null;
   return (
 
@@ -13,7 +21,7 @@ const BuyerVehicleModal = ({ vehicle, onClose }) => {
             <h2>2022 Renault Clio V - Quick View</h2>
             <div className="actions">
               <a href="#more">More details</a>
-              <button className="bid-now-button">Bid Now</button>
+              <button className="bid-now-button" onClick={handleBidClick}>Bid Now</button>
               <button className="close-button" aria-label="Close">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

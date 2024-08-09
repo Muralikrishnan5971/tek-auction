@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import BuyerVehicleModal from '../../../components/Modal/BuyerVehicleModal/BuyerVehicleModal';
+import { useNavigate } from 'react-router-dom';
 import './BuyerAuctionPage.css';
 
 const Vehicle = () => {
     const [activeTab, setActiveTab] = useState('live');
     const [selectedVehicle, setSelectedVehicle] = useState(null); 
     const [isModalOpen, setIsModalOpen] = useState(false); 
+
+    const navigate = useNavigate();
+    
+    const handleBidClick = () => {
+        navigate('/buyer/auction/history');
+      };
+    
 
     const vehicles = [
         { id: 1, name: '2022 Mirai XLE', price: '20,890.00', timeLeft: '10:30:00', imgSrc: 'https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg?t=st=1723222608~exp=1723226208~hmac=75e60789082a9647eb9aaf1ad796818b32bb6992aab31070b16fa9c710719b1b&w=996' },
@@ -84,7 +92,7 @@ const Vehicle = () => {
                             <p>${vehicle.price}</p>
                             <p className='quick' onClick={() => handleQuickView(vehicle)}>Quick view</p>
                         </div>
-                        <button className="bid-now">Bid Now</button>
+                        <button className="bid-now" onClick={handleBidClick}>Bid Now</button>
                     </div>
                 ))}
             </div>
